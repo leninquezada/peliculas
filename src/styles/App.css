@@ -1,0 +1,24 @@
+.LogoImagen{
+  width: 60px;
+  height: 60px;
+}
+.vid {
+  height: 90vh;
+}
+.vid video {
+  height: 100%;
+}
+.player-wrapper {
+  position: relative;
+  padding-top: 56.25%; /* Player ratio: 100 / (1280 / 720) */
+  width: 120px;
+  height: 100px;
+}
+.react-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.inicio{
+  text-align: center;
+}
