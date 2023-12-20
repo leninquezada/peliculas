@@ -5,7 +5,7 @@ import {MyRoutes} from "./routes/Routes";
 function App() {
   return (
       <div>
-          <header className={"inicio"}>
+          <header className={"cabecera"}>
               <h1><img src={logo} className={"LogoImagen"}/>Películas</h1>
           </header>
           <MyRoutes/>

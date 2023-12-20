@@ -1,0 +1,25 @@
+.movieCard{
+    list-style: none;
+    font-size: 15rem;
+    text-align: center;
+    transition: 0.5s;
+}
+.movieCard:hover{
+    opacity: 0.5;
+    transform: translateY(-30px);
+    transition: 0.5s;
+}
+.movieImage{
+    border-radius: 10px;
+    background-color: red;
+}
+@media (max-width: 560px) {
+    .movieImage{
+        width: 90%;
+        height: auto;
+    }
+}
+.subtitle{
+    text-align: center;
+    font-size: 14px;
+}

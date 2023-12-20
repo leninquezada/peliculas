@@ -1,10 +1,18 @@
-import {MovieCards, MovieCards2} from "./MovieCards";
-export function ContextMovieCard(){
-    return(
-        <div className={""}>
-            <MovieCards/>
-            <MovieCards2/>
-        </div>
-    )
+import {useEffect, useState} from "react";
+import {get} from "../data/httpClient";
+import {MovieCards} from "./MovieCards";
+import "../styles/ConTextMovieCard.css";
+export function ContextMovieCard() {
+    const [movies, SetMovies] = useState([])
+    useEffect(() => {
+        get("/discover/movie").then((data) => {
+            SetMovies(data.results);
+            console.log(data);
+        })
+    }, []);
+    return (<ul className={"container"}>
+        {movies.map(item=>(
+            <MovieCards movie={item}/>
+        ))}
+    </ul>)
 }
-
