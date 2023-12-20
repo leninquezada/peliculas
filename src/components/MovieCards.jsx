@@ -4,5 +4,10 @@ export function MovieCards({movie}) {
     return (<li className={"movieCard"}>
         <img className={"movieImage"} src={imageUrl} alt={movie.title} width={230} height={345}/>
         <div className={"subtitle"}>{movie.title}</div>
+        <div id={"synopsis"}>
+            <b>Sinopsis</b>
+            <br/>
+            {movie.overview}</div>
     </li>)
 }
+
