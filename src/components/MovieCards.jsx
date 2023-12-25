@@ -5,7 +5,7 @@ export function MovieCards({movie}) {
     return (<li className={"movieCard"}>
         <img className={"movieImage"} src={imageUrl} alt={movie.title} width={230} height={345}/>
         <div className={"subtitle"}>{movie.title}</div>
-        <SmallBoxCards box={movie.overview}/>
+        <SmallBoxCards box={movie.overview} title={movie.title}/>
     </li>)
 }
 

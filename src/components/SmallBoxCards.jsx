@@ -1,21 +1,9 @@
-import {useState} from "react";
+import {BasicModal} from "./Modal";
 
-export function SmallBoxCards({box}) {
-    const [open, setOpen] = useState(false);
-    const [selectedValue, setSelectedValue] = useState({box});
-    const handleClickOpen = () => {
-        setOpen(true);
-    };
-    const handleClose = (value) => {
-        setOpen(false);
-        setSelectedValue(value);
-    };
+export function SmallBoxCards({box, title}) {
     return (
         <div>
-            <button className={"synopsis"} onClick={handleClickOpen}>  Sipnosis  </button>
-            <dialog selectedValue={selectedValue} open={open} onClose={handleClose} showCloseIcon={true} >
-                {box}
-            </dialog>
+            <BasicModal box={box} title={title} />
         </div>
     )
 }
