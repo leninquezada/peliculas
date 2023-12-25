@@ -23,5 +23,15 @@
 }
 .synopsis{
     text-align: -moz-left;
-    font-size: 12px;
+    font-size: 19px;
+    color: red;
+    border-radius: 4px;
 }
+.synopsis:hover {
+    background-color: bisque;
+}
+.synopsis:focus {
+    box-shadow: 0 0 10px 2px aqua;
+    outline: dashed 2px aqua;
+}
+
