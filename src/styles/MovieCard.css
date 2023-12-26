@@ -50,7 +50,7 @@
     align-content: center;
     top: 0;
     left: 0;
-    position: fixed;
+    position: marker;
 }
 .youtube{
     width: 30px;
