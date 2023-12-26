@@ -45,5 +45,15 @@
     border: 2px solid #000;
     box-shadow: 24;
 }
-
+.play{
+    align-items: center;
+    align-content: center;
+    top: 0;
+    left: 0;
+    position: fixed;
+}
+.youtube{
+    width: 30px;
+    height: 30px;
+}
 

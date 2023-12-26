@@ -7,7 +7,7 @@ export function ContextMovieCard() {
     useEffect(() => {
         get("/discover/movie").then((data) => {
             SetMovies(data.results.filter(resultado => resultado.language = "es-ES"));
-            console.log(data);
+            console.log(data.results);
         })
     }, []);
     return (<ul className={"container"}>

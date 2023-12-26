@@ -11,7 +11,7 @@ export function BasicModal({box, title}) {
 
     return (
         <div>
-            <Button onClick={handleOpen}> View sypnosis movie </Button>
+            <Button onClick={handleOpen} variant="outlined"> View sypnosis movie </Button>
             <Modal
                 open={open}
                 onClose={handleClose}
