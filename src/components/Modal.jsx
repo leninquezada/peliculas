@@ -3,7 +3,7 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
-
+import SendIcon from '@mui/icons-material/Send';
 export function BasicModal({box, title}) {
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
@@ -11,7 +11,7 @@ export function BasicModal({box, title}) {
 
     return (
         <div>
-            <Button onClick={handleOpen} variant="outlined"> View sypnosis movie </Button>
+            <Button onClick={handleOpen} variant="contained" endIcon={<SendIcon />}> View sypnosis movie </Button>
             <Modal
                 open={open}
                 onClose={handleClose}
