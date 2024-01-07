@@ -6,7 +6,7 @@ function App() {
   return (
       <div>
           <header className={"home-headboard"}>
-              <h1><img src={logo} className={"home-logo"}/>Películas</h1>
+              <h1><img src={logo} className={"home-logo"} alt={"Películas"}/>Películas</h1>
           </header>
           <MyRoutes/>
       </div>
