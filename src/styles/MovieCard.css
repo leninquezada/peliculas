@@ -1,36 +1,36 @@
-.movieCard{
+.movie-card{
     list-style: none;
     font-size: 14px;
     transition: 0.5s;
 }
-.movieCard:hover{
+.movie-card:hover{
     opacity: 0.5;
     transform: translateY(-30px);
     transition: 0.5s;
 }
-.movieImage{
+.movie-image{
     border-radius: 10px;
 }
 @media (max-width: 560px) {
-    .movieImage{
+    .movie-image{
         width: 90%;
         height: auto;
     }
 }
-.subtitle{
+.movie-subtitle{
     text-align: center;
     font-size: 18px;
 }
-.synopsis{
+.movie-synopsis{
     text-align: -moz-left;
     font-size: 19px;
     color: red;
     border-radius: 4px;
 }
-.synopsis:hover {
+.movie-synopsis:hover {
     background-color: bisque;
 }
-.synopsis:focus {
+.movie-synopsis:focus {
     box-shadow: 0 0 10px 2px aqua;
     outline: dashed 2px aqua;
 }
@@ -45,14 +45,14 @@
     border: 2px solid #000;
     box-shadow: 24;
 }
-.play{
+.youtube-play{
     align-items: center;
     align-content: center;
     top: 0;
     left: 0;
     position: marker;
 }
-.youtube{
+.youtube-logo{
     width: 30px;
     height: 30px;
 }

@@ -22,7 +22,7 @@ export function YoutubeModal({id, title}) {
     return (
         <React.Fragment>
             <Button onClick={handleClickOpen}>
-                <p className={"play"}><img src={youtube} className={"youtube"} title={"Watch Trailer"}/></p>
+                <p className={"youtube-play"}><img src={youtube} className={"youtube-logo"} title={"Watch Trailer"}/></p>
             </Button>
             <Dialog
                 open={open}

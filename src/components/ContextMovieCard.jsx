@@ -10,7 +10,7 @@ export function ContextMovieCard() {
             console.log(data.results);
         })
     }, []);
-    return (<ul className={"container"}>
+    return (<ul className={"container-movie"}>
         {movies.map(item=>(
             <MovieCards movie={item}/>
         ))}
